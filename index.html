@@ -1,297 +1,160 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f8f6ef">
-<title>همراه | یادگیری برای آینده</title>
-<style>
-:root {
-  --cream: #f8f6ef;
-  --green: #244b3b;
-  --sage: #dce8dc;
-  --text: #26362d;
-  --muted: #6e7b70;
-  --white: #fffefa;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--cream);
-  color: var(--text);
-  font-family: Tahoma, Arial, sans-serif;
-  line-height: 1.9;
-}
-header {
-  padding: 18px 6%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  border-bottom: 1px solid #e8e7dc;
-}
-.logo { font-size: 25px; font-weight: bold; color: var(--green); }
-.logo span { color: #a3b99e; }
-button, a { -webkit-tap-highlight-color: transparent; }
-button {
-  cursor: pointer;
-  font: inherit;
-}
-.lang {
-  border: 1px solid #cbd8c8;
-  background: var(--white);
-  color: var(--green);
-  border-radius: 22px;
-  padding: 6px 14px;
-}
-.hero {
-  padding: 48px 6% 35px;
-  max-width: 900px;
-  margin: auto;
-}
-.tag {
-  color: #54765c;
-  font-size: 13px;
-  letter-spacing: .4px;
-}
-h1 {
-  color: var(--green);
-  font-size: clamp(29px, 6vw, 46px);
-  line-height: 1.55;
-  margin: 10px 0;
-}
-.hero p { color: var(--muted); max-width: 600px; }
-main { padding: 0 6% 45px; max-width: 1050px; margin: auto; }
-.section-title { font-size: 22px; color: var(--green); }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
-  gap: 15px;
-}
-.card {
-  background: var(--white);
-  border: 1px solid #e8e8dc;
-  border-radius: 20px;
-  padding: 22px;
-}
-.icon { font-size: 30px; }
-.card h3 { color: var(--green); margin: 7px 0; }
-.card p { color: var(--muted); font-size: 14px; }
-.open {
-  border: 0;
-  background: var(--sage);
-  color: var(--green);
-  border-radius: 12px;
-  padding: 9px 15px;
-  margin-top: 5px;
-}
-.panel {
-  display: none;
-  margin-top: 22px;
-  padding: 22px;
-  background: #edf2e9;
-  border-radius: 18px;
-}
-.panel.active { display: block; }
-.panel h2 { color: var(--green); }
-.panel li { margin-bottom: 7px; }
-.note {
-  width: 100%;
-  min-height: 110px;
-  padding: 12px;
-  border: 1px solid #cbd8c8;
-  border-radius: 12px;
-  font: inherit;
-  background: var(--white);
-}
-.save {
-  background: var(--green);
-  color: white;
-  border: 0;
-  border-radius: 12px;
-  padding: 10px 18px;
-  margin-top: 10px;
-}
-#status { color: var(--green); font-size: 14px; }
-footer {
-  text-align: center;
-  color: var(--muted);
-  padding: 25px;
-  border-top: 1px solid #e8e7dc;
-  font-size: 13px;
-}
-body.english { direction: ltr; }
-@media (max-width: 480px) {
-  .hero { padding-top: 32px; }
-  header { padding: 14px 5%; }
-  main { padding-left: 5%; padding-right: 5%; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>همراه | فضایی برای یادگیری و رشد</title>
+    
+    <!-- لود کردن فونت وزیرمتن -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    
+    <!-- لینک به فایل استایل اصلی سایت -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- لینک به فایل استایل بخش آکادمی (که قبلا ساختیم) -->
+    <link rel="stylesheet" href="academy.css">
 </head>
 <body>
-<header>
-  <div class="logo">همراه<span> .</span></div>
-  <button class="lang" id="langBtn" onclick="toggleLanguage()">English</button>
-</header>
 
-<section class="hero">
-  <div class="tag" id="tag">فضایی برای یادگیری و رشد</div>
-  <h1 id="headline">قدم‌به‌قدم، به سوی آینده‌ای که می‌خواهی.</h1>
-  <p id="intro">همراه توست تا زبان انگلیسی، برنامه‌نویسی و هوش مصنوعی را یاد بگیری و ایده‌هایت را به پروژه‌های واقعی تبدیل کنی.</p>
-</section>
+    <!-- هدر اصلی سایت -->
+    <header class="site-header">
+        <div class="header-content">
+            <h1>قدم‌به‌قدم، به سوی آینده‌ای که می‌خواهی.</h1>
+            <p>همراه توست تا زبان انگلیسی، برنامه‌نویسی و هوش مصنوعی را یاد بگیری و ایده‌هایت را به پروژه‌های واقعی تبدیل کنی.</p>
+        </div>
+    </header>
 
-<main>
-  <h2 class="section-title" id="sectionTitle">مسیرهای یادگیری من</h2>
-  <div class="grid">
-    <article class="card">
-      <div class="icon">🌷</div>
-      <h3 id="englishTitle">آکادمی انگلیسی</h3>
-      <p id="englishDesc">از واژگان و گرامر تا مکالمه، شنیدار، نوشتار و انگلیسی آکادمیک.</p>
-      <button class="open" onclick="showPanel('english')" id="englishBtn">شروع یادگیری ←</button>
-    </article>
-    <article class="card">
-      <div class="icon">💻</div>
-      <h3 id="codingTitle">آزمایشگاه پایتون و هوش مصنوعی</h3>
-      <p id="codingDesc">برنامه‌نویسی، تحلیل داده، یادگیری ماشین و پروژه‌های علمی.</p>
-      <button class="open" onclick="showPanel('coding')" id="codingBtn">کشف مسیر ←</button>
-    </article>
-    <article class="card">
-      <div class="icon">✈️</div>
-      <h3 id="flightTitle">رؤیای پرواز</h3>
-      <p id="flightDesc">آشنایی با آیرودینامیک، طراحی هواپیما و شبیه‌سازی.</p>
-      <button class="open" onclick="showPanel('flight')" id="flightBtn">شروع کاوش ←</button>
-    </article>
-    <article class="card">
-      <div class="icon">🌿</div>
-      <h3 id="notesTitle">یادداشت‌ها و پیشرفت</h3>
-      <p id="notesDesc">ایده‌ها، یادداشت‌ها و برنامه یادگیری‌ات را نگه دار.</p>
-      <button class="open" onclick="showPanel('notes')" id="notesBtn">یادداشت‌های من ←</button>
-    </article>
-  </div>
+    <!-- کانتینر اصلی -->
+    <main class="main-container">
 
-  <section class="panel" id="english">
-    <h2 id="eHead">🌷 آکادمی انگلیسی</h2>
-    <p>یادگیری زبان با درس‌های کوتاه و تمرین‌های مرحله‌ای پیش می‌رود.</p>
-    <ul>
-      <li>واژگان و گرامر با توضیح فارسی و مثال طبیعی</li>
-      <li>تمرین Reading و Listening</li>
-      <li>مکالمه و تلفظ</li>
-      <li>نوشتن ایمیل به استادان و انگلیسی آکادمیک</li>
-      <li>آمادگی IELTS و نوشتن مقاله</li>
-    </ul>
-    <p>منابع پیشنهادی برای مسیر آموزشی: Evolve، Inside Reading و Vocabulary for IELTS. درس‌ها و تمرین‌های اختصاصی را به‌تدریج اضافه می‌کنیم.</p>
-  </section>
+        <h2 class="section-title">مسیرهای یادگیری من</h2>
 
-  <section class="panel" id="coding">
-    <h2>💻 آزمایشگاه پایتون و هوش مصنوعی</h2>
-    <ul>
-      <li>پایتون از پایه تا پروژه</li>
-      <li>NumPy، Pandas و مصورسازی داده</li>
-      <li>آمار و یادگیری ماشین</li>
-      <li>تحلیل داده‌های زیستی و علوم اعصاب</li>
-      <li>Git، GitHub و کدنویسی بازتولیدپذیر</li>
-    </ul>
-    <p>تمرین‌ها را به‌تدریج اضافه می‌کنیم. برای اجرای کدهای سنگین فعلاً می‌توانی از Google Colab استفاده کنی.</p>
-  </section>
+        <!-- کارت‌های مسیرهای اصلی -->
+        <div class="paths-grid">
+            <!-- کارت آکادمی انگلیسی -->
+            <a href="#english-academy" class="path-card active">
+                <span class="path-icon">🌷</span>
+                <h3>آکادمی انگلیسی</h3>
+                <p>از واژگان و گرامر تا مکالمه، شنیدار، نوشتار و انگلیسی آکادمیک.</p>
+            </a>
 
-  <section class="panel" id="flight">
-    <h2>✈️ رؤیای پرواز</h2>
-    <ul>
-      <li>اصول پرواز و آیرودینامیک</li>
-      <li>شناخت بال، بدنه و سطوح کنترلی</li>
-      <li>طراحی مفهومی هواپیمای مدل</li>
-      <li>آشنایی با ابزارهای شبیه‌سازی</li>
-    </ul>
-    <p>این بخش برای آموزش و طراحی مفهومی است؛ هر طرح پروازی واقعی به تحلیل مهندسی و آزمایش ایمن نیاز دارد.</p>
-  </section>
+            <!-- کارت پایتون -->
+            <div class="path-card">
+                <span class="path-icon">💻</span>
+                <h3>آزمایشگاه پایتون و هوش مصنوعی</h3>
+                <p>برنامه‌نویسی، تحلیل داده، یادگیری ماشین و پروژه‌های علمی.</p>
+            </div>
 
-  <section class="panel" id="notes">
-    <h2>🌿 یادداشت‌های من</h2>
-    <p>یادداشتت را بنویس؛ این نسخه آن را در همین مرورگر ذخیره می‌کند.</p>
-    <textarea class="note" id="noteText" placeholder="امروز چه یاد گرفتم؟ قدم بعدی چیست؟"></textarea>
-    <br>
-    <button class="save" onclick="saveNote()">ذخیره یادداشت</button>
-    <p id="status"></p>
-  </section>
-</main>
+            <!-- کارت پرواز -->
+            <div class="path-card">
+                <span class="path-icon">✈️</span>
+                <h3>رؤیای پرواز</h3>
+                <p>آشنایی با آیرودینامیک، طراحی هواپیما و شبیه‌سازی.</p>
+            </div>
 
-<footer id="footerText">همراه؛ یادگیری با آرامش، پیشرفت با استمرار 🌱</footer>
+            <!-- کارت یادداشت‌ها -->
+            <div class="path-card">
+                <span class="path-icon">🌿</span>
+                <h3>یادداشت‌ها و پیشرفت</h3>
+                <p>ایده‌ها، یادداشت‌ها و برنامه یادگیری‌ات را نگه دار.</p>
+            </div>
+        </div>
 
-<script>
-const panels = document.querySelectorAll('.panel');
+        <!-- =========================================
+             بخش آکادمی انگلیسی (جزئیات)
+             ========================================= -->
+        <section id="english-academy" class="academy-section">
+            <div class="academy-header">
+                <h2>🌷 آکادمی انگلیسی</h2>
+                <p>یادگیری زبان با درس‌های کوتاه و تمرین‌های مرحله‌ای پیش می‌رود.</p>
+            </div>
 
-function showPanel(id) {
-  panels.forEach(panel => panel.classList.toggle('active', panel.id === id));
-  document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
+            <!-- لیست ویژگی‌ها -->
+            <ul class="academy-features">
+                <li>واژگان و گرامر با توضیح فارسی و مثال طبیعی</li>
+                <li>تمرین Reading و Listening</li>
+                <li>مکالمه و تلفظ</li>
+                <li>نوشتن ایمیل به استادان و انگلیسی آکادمیک</li>
+                <li>آمادگی IELTS و نوشتن مقاله</li>
+            </ul>
 
-function saveNote() {
-  const text = document.getElementById('noteText').value;
-  try {
-    localStorage.setItem('hamrah-note', text);
-    document.getElementById('status').textContent = 'یادداشتت ذخیره شد 🌱';
-  } catch (e) {
-    document.getElementById('status').textContent = 'ذخیره‌سازی در این مرورگر در دسترس نیست.';
-  }
-}
+            <div class="academy-resources">
+                <p><strong>منابع پیشنهادی:</strong> Evolve، Inside Reading و Vocabulary for IELTS. درس‌ها و تمرین‌های اختصاصی را به‌تدریج اضافه می‌کنیم.</p>
+            </div>
 
-try {
-  document.getElementById('noteText').value = localStorage.getItem('hamrah-note') || '';
-} catch (e) {}
+            <!-- بخش لینک‌های جدید (کتاب‌ها و گرامر) -->
+            <h3 class="links-title">📚 کتابخانه و دروس (جدید)</h3>
+            
+            <div class="lessons-grid">
+                <!-- لینک به کتاب Evolve -->
+                <a href="evolve-1.html" class="lesson-link-card">
+                    <div class="llc-icon">🗣️</div>
+                    <div class="llc-text">
+                        <h4>کتاب Evolve 1</h4>
+                        <p>مکالمه مقدماتی</p>
+                    </div>
+                </a>
 
-let isEnglish = false;
+                <!-- لینک به مکالمه متوسط -->
+                <a href="conversation-intermediate.html" class="lesson-link-card">
+                    <div class="llc-icon">💬</div>
+                    <div class="llc-text">
+                        <h4>مکالمات سطح متوسط</h4>
+                        <p>پیشنهاد دادن و پاسخ</p>
+                    </div>
+                </a>
 
-function toggleLanguage() {
-  isEnglish = !isEnglish;
-  document.body.classList.toggle('english', isEnglish);
-  document.documentElement.lang = isEnglish ? 'en' : 'fa';
-  document.documentElement.dir = isEnglish ? 'ltr' : 'rtl';
+                <!-- لینک به مکالمه پیشرفته -->
+                <a href="conversation-advanced.html" class="lesson-link-card">
+                    <div class="llc-icon">👑</div>
+                    <div class="llc-text">
+                        <h4>مکالمات سطح پیشرفته</h4>
+                        <p>مخالفت مودبانه</p>
+                    </div>
+                </a>
+                
+                <!-- یک کارت خالی برای گرامر (برای بعدا) -->
+                <div class="lesson-link-card disabled">
+                    <div class="llc-icon">📝</div>
+                    <div class="llc-text">
+                        <h4>گرامر (به‌زودی)</h4>
+                        <p>از ساده تا پیشرفته</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  const words = isEnglish ? {
-    langBtn: 'فارسی',
-    tag: 'A space to learn and grow',
-    headline: 'Step by step, toward the future you imagine.',
-    intro: 'Learn English, programming and AI, and turn your ideas into real projects.',
-    sectionTitle: 'My learning paths',
-    englishTitle: 'English Academy',
-    englishDesc: 'Vocabulary, grammar, speaking, listening, writing and academic English.',
-    englishBtn: 'Start learning →',
-    codingTitle: 'Python & AI Lab',
-    codingDesc: 'Programming, data analysis, machine learning and research projects.',
-    codingBtn: 'Explore →',
-    flightTitle: 'Dream of Flight',
-    flightDesc: 'Aerodynamics, aircraft design and simulation.',
-    flightBtn: 'Explore →',
-    notesTitle: 'Notes & Progress',
-    notesDesc: 'Keep your ideas and learning notes in one place.',
-    notesBtn: 'My notes →',
-    footerText: 'Hamrah — Learn calmly, grow consistently.'
-  } : {
-    langBtn: 'English',
-    tag: 'فضایی برای یادگیری و رشد',
-    headline: 'قدم‌به‌قدم، به سوی آینده‌ای که می‌خواهی.',
-    intro: 'همراه توست تا زبان انگلیسی، برنامه‌نویسی و هوش مصنوعی را یاد بگیری و ایده‌هایت را به پروژه‌های واقعی تبدیل کنی.',
-    sectionTitle: 'مسیرهای یادگیری من',
-    englishTitle: 'آکادمی انگلیسی',
-    englishDesc: 'از واژگان و گرامر تا مکالمه، شنیدار، نوشتار و انگلیسی آکادمیک.',
-    englishBtn: 'شروع یادگیری ←',
-    codingTitle: 'آزمایشگاه پایتون و هوش مصنوعی',
-    codingDesc: 'برنامه‌نویسی، تحلیل داده، یادگیری ماشین و پروژه‌های علمی.',
-    codingBtn: 'کشف مسیر ←',
-    flightTitle: 'رؤیای پرواز',
-    flightDesc: 'آشنایی با آیرودینامیک، طراحی هواپیما و شبیه‌سازی.',
-    flightBtn: 'شروع کاوش ←',
-    notesTitle: 'یادداشت‌ها و پیشرفت',
-    notesDesc: 'ایده‌ها، یادداشت‌ها و برنامه یادگیری‌ات را نگه دار.',
-    notesBtn: 'یادداشت‌های من ←',
-    footerText: 'همراه؛ یادگیری با آرامش، پیشرفت با استمرار 🌱'
-  };
+        <!-- بخش‌های دیگر (به صورت خلاصه) -->
+        <section class="other-section">
+            <h2>💻 آزمایشگاه پایتون و هوش مصنوعی</h2>
+            <ul>
+                <li>پایتون از پایه تا پروژه</li>
+                <li>NumPy، Pandas و مصورسازی داده</li>
+                <li>آمار و یادگیری ماشین</li>
+            </ul>
+            <p class="text-muted">تمرین‌ها را به‌تدریج اضافه می‌کنیم. برای اجرای کدهای سنگین فعلاً می‌توانی از Google Colab استفاده کنی.</p>
+        </section>
 
-  Object.entries(words).forEach(([id, value]) => {
-    const el = document.getElementById(id);
-    if (el) el.textContent = value;
-  });
-}
-</script>
+        <section class="other-section">
+            <h2>✈️ رؤیای پرواز</h2>
+            <ul>
+                <li>اصول پرواز و آیرودینامیک</li>
+                <li>شناخت بال، بدنه و سطوح کنترلی</li>
+                <li>طراحی مفهومی هواپیمای مدل</li>
+            </ul>
+        </section>
+
+        <section class="other-section">
+            <h2>🌿 یادداشت‌های من</h2>
+            <p class="text-muted">یادداشتت را بنویس؛ این نسخه آن را در همین مرورگر ذخیره می‌کند.</p>
+            <!-- اینجا می‌توانید بعدا یک کد جاوااسکریپت برای یادداشت اضافه کنید -->
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>ساخته شده با ❤️ برای یادگیری بهتر</p>
+    </footer>
+
 </body>
 </html>
