@@ -1,0 +1,141 @@
+/* =========================================
+   1. استایل‌های مربوط به کتاب Evolve
+   ========================================= */
+.academy-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+    direction: rtl;
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+}
+
+.book-header {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 35px 20px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(30, 58, 138, 0.15);
+}
+
+.book-header h1 { font-size: 26px; margin-bottom: 8px; }
+.book-header p { font-size: 15px; opacity: 0.9; margin-bottom: 15px; }
+
+.book-badges { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.book-badges span { background: rgba(255, 255, 255, 0.2); padding: 6px 14px; border-radius: 20px; font-size: 13px; backdrop-filter: blur(4px); }
+
+.content-card { background-color: #ffffff; border-radius: 16px; padding: 25px; margin-bottom: 25px; border: 1px solid #e5e7eb; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+.card-title { font-size: 18px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid #f3f4f6; color: #1f2937; }
+.text-blue { color: #2563eb; }
+.text-sm { font-size: 14px; color: #4b5563; margin-bottom: 15px; line-height: 1.7; }
+
+.toc-list { list-style: none; padding: 0; }
+.toc-list li { padding: 12px 0; border-bottom: 1px dashed #e5e7eb; display: flex; justify-content: space-between; font-size: 15px; transition: background 0.3s ease; }
+.toc-list li:hover { background-color: #f8fafc; border-radius: 8px; padding-right: 10px; }
+.toc-list li:last-child { border-bottom: none; }
+
+.guide-list { list-style: none; padding-right: 10px; }
+.guide-list li { margin-bottom: 12px; font-size: 14px; color: #4b5563; position: relative; padding-right: 20px; }
+.guide-list li::before { content: "•"; color: #3b82f6; font-size: 24px; position: absolute; right: 0; top: -6px; }
+
+.lesson-section { margin-top: 40px; }
+.lesson-header { background-color: #1e3a8a; color: white; padding: 15px 25px; border-radius: 16px 16px 0 0; border-bottom: 3px solid #3b82f6; }
+.lesson-header h3 { font-size: 17px; margin: 0; }
+.conversation-card { border-top-left-radius: 0; border-top-right-radius: 0; border-top: none; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+
+.chat-line { display: flex; flex-direction: column; margin-bottom: 18px; padding-bottom: 18px; border-bottom: 1px solid #f1f5f9; }
+.chat-line:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.speaker { font-weight: bold; color: #374151; margin-bottom: 4px; font-size: 15px; }
+.english { color: #2563eb; font-weight: 600; direction: ltr; text-align: left; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-bottom: 6px; font-size: 15px; }
+.persian { font-size: 13px; color: #6b7280; background-color: #f8fafc; padding: 8px 12px; border-radius: 8px; border-right: 3px solid #93c5fd; line-height: 1.6; }
+
+/* =========================================
+   2. استایل‌های مکالمه سطح متوسط (فیروزه‌ای)
+   ========================================= */
+.conversation-infographic { max-width: 800px; margin: 30px auto; font-family: 'Vazirmatn', Tahoma, sans-serif; direction: rtl; background: #fff; border-radius: 15px; box-shadow: 0 5px 15px rgba(13, 148, 136, 0.1); border: 1px solid #ccfbf1; overflow: hidden; }
+.c-header { display: flex; align-items: center; padding: 20px; background: #f0fdfa; border-bottom: 2px solid #99f6e4; }
+.c-icon { background: #0d9488; color: white; font-size: 24px; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 12px; margin-left: 15px; }
+.c-title-box h2 { margin: 0; font-size: 22px; color: #115e59; direction: ltr; }
+.c-title-box p { margin: 5px 0 0; font-size: 16px; color: #0f766e; font-weight: bold; }
+.c-definition { padding: 20px; background: #f8fafc; color: #334155; font-size: 15px; line-height: 1.6; border-bottom: 1px solid #e2e8f0; }
+.c-translation { font-size: 13px; color: #64748b; margin-top: 8px; direction: rtl; }
+.c-section-title { padding: 10px 20px; font-weight: bold; font-size: 16px; color: #333; margin-top: 10px; }
+.bg-teal { background: #ccfbf1; border-right: 5px solid #14b8a6; color: #115e59; }
+.bg-green { background: #dcfce7; border-right: 5px solid #22c55e; color: #166534;}
+.bg-yellow { background: #fef9c3; border-right: 5px solid #eab308; color: #854d0e;}
+.bg-purple { background: #f3e8ff; border-right: 5px solid #a855f7; color: #6b21a8;}
+.c-structure-list { padding: 15px 20px; display: flex; flex-direction: column; gap: 10px; }
+.c-struct-item { display: flex; justify-content: space-between; background: #f8fafc; padding: 12px 15px; border-radius: 8px; border: 1px solid #e2e8f0; align-items: center; }
+.c-struct-item .en { color: #0f766e; font-weight: bold; direction: ltr; text-align: left; }
+.c-struct-item .fa { color: #475569; font-size: 13px; }
+.c-examples { padding: 10px 20px; }
+.c-example-row { background: #f0fdfa; padding: 15px; border-radius: 10px; margin-bottom: 15px; border-right: 4px solid #0d9488; }
+.c-chat { margin-bottom: 8px; font-size: 14px;}
+.c-chat:last-child { margin-bottom: 0; }
+.c-chat strong { color: #0f766e; }
+.c-chat .en { color: #1e293b; font-weight: 500; direction: ltr; display: inline-block;}
+.c-chat .fa { display: block; font-size: 12px; color: #64748b; margin-top: 4px; margin-right: 15px;}
+.c-compare-table { display: flex; gap: 10px; padding: 0 20px 20px; }
+.c-col { flex: 1; background: #f8fafc; border-radius: 8px; padding: 15px; border: 1px solid #e2e8f0; }
+.c-col.informal { border-top: 4px solid #f59e0b; }
+.c-col.formal { border-top: 4px solid #3b82f6; }
+.c-col h4 { margin: 0 0 10px; font-size: 14px; color: #0f172a; }
+.c-col ul { list-style: none; padding: 0; margin: 0; }
+.c-col li { display: flex; justify-content: space-between; font-size: 13px; padding: 8px 0; border-bottom: 1px dotted #cbd5e1; direction: ltr; text-align: left;}
+.c-col li span { color: #64748b; font-size: 12px; direction: rtl; text-align: right;}
+.c-col li:last-child { border-bottom: none; }
+.c-tip { padding: 20px; background: #fff; }
+.c-tip-row { display: flex; gap: 10px; margin-top: 15px; }
+.c-wrong { flex: 1; background: #fef2f2; color: #991b1b; padding: 12px; border-radius: 8px; border: 1px solid #fecaca; font-size: 13px; direction: ltr; text-align: left; }
+.c-right { flex: 1; background: #f0fdf4; color: #166534; padding: 12px; border-radius: 8px; border: 1px solid #bbf7d0; font-size: 13px; direction: ltr; text-align: left; }
+
+/* =========================================
+   3. استایل‌های مکالمه سطح پیشرفته (سرمه‌ای/طلایی)
+   ========================================= */
+.advanced-infographic { max-width: 800px; margin: 30px auto; font-family: 'Vazirmatn', Tahoma, sans-serif; direction: rtl; background: #fff; border-radius: 15px; box-shadow: 0 5px 15px rgba(30, 58, 138, 0.1); border: 1px solid #e2e8f0; overflow: hidden; }
+.a-header { display: flex; align-items: center; padding: 20px; background: #1e293b; border-bottom: 3px solid #f59e0b; }
+.a-icon { background: #f59e0b; color: #1e293b; font-size: 24px; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-left: 15px; }
+.a-title-box h2 { margin: 0; font-size: 22px; color: #f8fafc; direction: ltr; }
+.a-title-box p { margin: 5px 0 0; font-size: 16px; color: #fcd34d; font-weight: bold; }
+.a-definition { padding: 20px; background: #f8fafc; color: #334155; font-size: 15px; line-height: 1.6; border-bottom: 1px solid #e2e8f0; }
+.a-translation { font-size: 13px; color: #64748b; margin-top: 8px; direction: rtl; }
+.a-section-title { padding: 10px 20px; font-weight: bold; font-size: 16px; color: #333; margin-top: 10px; }
+.bg-navy { background: #e2e8f0; border-right: 5px solid #1e293b; color: #1e293b; }
+.bg-gold { background: #fef3c7; border-right: 5px solid #f59e0b; color: #92400e; }
+.bg-amber { background: #ffedd5; border-right: 5px solid #f97316; color: #9a3412; }
+.a-structure-list { padding: 15px 20px; display: flex; flex-direction: column; gap: 10px; }
+.a-struct-item { display: flex; justify-content: space-between; background: #f8fafc; padding: 12px 15px; border-radius: 8px; border: 1px solid #e2e8f0; align-items: center; }
+.a-struct-item .en { color: #1e293b; font-weight: bold; direction: ltr; text-align: left; }
+.a-struct-item .fa { color: #475569; font-size: 13px; }
+.a-examples { padding: 10px 20px; }
+.a-example-row { background: #f8fafc; padding: 15px; border-radius: 10px; margin-bottom: 15px; border-right: 4px solid #f59e0b; }
+.a-chat { margin-bottom: 8px; font-size: 14px;}
+.a-chat:last-child { margin-bottom: 0; }
+.a-chat strong { color: #1e293b; }
+.a-chat .en { color: #334155; font-weight: 500; direction: ltr; display: inline-block;}
+.a-chat .fa { display: block; font-size: 12px; color: #64748b; margin-top: 4px; margin-right: 15px;}
+.a-compare-table { display: flex; gap: 10px; padding: 0 20px 20px; }
+.a-col { flex: 1; background: #fff; border-radius: 8px; padding: 15px; border: 1px solid #e2e8f0; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+.a-col.direct { border-top: 4px solid #ef4444; }
+.a-col.polite { border-top: 4px solid #10b981; }
+.a-col h4 { margin: 0 0 10px; font-size: 14px; color: #0f172a; }
+.a-col ul { list-style: none; padding: 0; margin: 0; }
+.a-col li { display: flex; justify-content: space-between; font-size: 13px; padding: 8px 0; border-bottom: 1px dotted #cbd5e1; direction: ltr; text-align: left;}
+.a-col li span { color: #64748b; font-size: 12px; direction: rtl; text-align: right;}
+.a-col li:last-child { border-bottom: none; }
+.a-tip { padding: 20px; background: #fff; }
+.a-tip-row { display: flex; gap: 10px; margin-top: 15px; }
+.a-wrong { flex: 1; background: #fef2f2; color: #991b1b; padding: 12px; border-radius: 8px; border: 1px solid #fecaca; font-size: 13px; direction: ltr; text-align: left; }
+.a-right { flex: 1; background: #f0fdf4; color: #166534; padding: 12px; border-radius: 8px; border: 1px solid #bbf7d0; font-size: 13px; direction: ltr; text-align: left; }
+
+/* =========================================
+   4. ریسپانسیو برای موبایل (مشترک)
+   ========================================= */
+@media (max-width: 600px) {
+    .toc-list li { flex-direction: column; gap: 5px; }
+    .book-header h1 { font-size: 22px; }
+    .c-compare-table, .c-tip-row, .a-compare-table, .a-tip-row { flex-direction: column; }
+    .c-struct-item, .a-struct-item { flex-direction: column; align-items: flex-start; gap: 5px; }
+    .c-example-row, .a-example-row { padding: 12px; }
+}
