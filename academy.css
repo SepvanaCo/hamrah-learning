@@ -408,3 +408,28 @@ body {
     .academy-features { flex-direction: column; }
     .lesson-link-card:hover { transform: translateY(-2px); }
 }
+/* =========================================
+   استایل‌های تکمیلی صفحه گرامر آیلتس
+   ========================================= */
+.sub-title {
+    font-size: 16px;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+/* باکس نکات آیلتس */
+.ielts-tip-box {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-right: 4px solid #3b82f6;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #1e3a8a;
+    line-height: 1.6;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
